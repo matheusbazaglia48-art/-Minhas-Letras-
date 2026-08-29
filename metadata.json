@@ -1,0 +1,6 @@
+{
+  "name": "Minhas Letras V4",
+  "description": "Biblioteca digital profissional de PDFs de músicas com organizador por categorias, apresentação de slides independente por música, rolagem automática e modo palco.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

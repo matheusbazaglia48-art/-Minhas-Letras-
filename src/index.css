@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-app: #0a0b0d;
+    --bg-surface: #121316;
+    --bg-card: #15171c;
+    --bg-card-hover: #1b1e25;
+    --border-subtle: #202227;
+    --border-strong: #2d3038;
+    --accent-blue: #3b82f6;
+    --text-primary: #e2e4e9;
+    --text-secondary: #868c98;
+    --text-muted: #525866;
+  }
+
+  body {
+    background-color: #0a0b0d;
+    color: #e2e4e9;
+  }
+
+  /* Hardware Specialist scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0b0d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #24272e;
+    border-radius: 3px;
+    border: 1px solid #16181d;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+  }
+
+  /* Prevent selection during drag operations */
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Specialist Tool slide canvas frame */
+.pdf-slide-canvas {
+  box-shadow: 0 0 0 1px #22242a, 0 24px 64px -12px rgba(0, 0, 0, 0.95);
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pdf-slide-container {
+  will-change: transform, scroll-position;
+}
